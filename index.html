@@ -1,1 +1,104 @@
-Hello World
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Pubudu's git page
+        </title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script type="text/javascript">
+            function opensegment(piece,element){
+                var i,Main,piece_b,piece_w;
+                Main = document.getElementsByClassName("Main");
+                for(i=0;i<Main.length;i++){
+                    Main[i].style.display = "none";
+                }
+                Main[piece-1].style.display = "block";
+            }
+            window.onload = function(){
+                document.getElementById("def").click()    
+            }
+        </script>
+    </head>
+    <body>
+        <div class="Main" id="1">
+            <h1>
+                Hello!
+            </h1>
+            <p>
+                Welcome to my git page! My name is Pubudu Anuradha. I am currently an undergraduate at the University of Colombo School of Computing. I am trying to get a degree in Computer Science.
+            </p>
+            
+        </div>
+        <div class="Main" id="2">
+            <p style="font-size: 2vw;">
+                As you can probably tell by these godawful colors and even worse layout, I'm not that experienced in Web-Design. I do have experience in these programming languages.
+            </p><div style="font-family:monospace;font-size:2vw;">
+                    C<br>
+                    C++<br>
+                    Python<br>
+                    Java<br>
+                    php<br>
+                    Arduino<br>
+                </div>
+        </div>
+        <div class="Main" id="3">
+            The subject matters in Computer Science I am currently most interested in are,
+            <ul>
+                <li>
+                    Machine Learning and Artificial Intelligence
+                </li>
+                <li>
+                    Media encoding and streaming technologies
+                </li>
+                <li>
+                    Game/engine design
+                </li>
+                <li>
+                    Free and open source software
+                </li>
+                <li>
+                    Machine aided marketing
+                </li>
+            </ul>
+        </div>
+        <div class="Main" id="4">
+            My very small list of hobbies includes,
+            <ul>
+                <li>
+                    Reading manga
+                </li>
+                <li>
+                    Listening to music
+                </li>
+                <li>
+                    Playing casual chess
+                </li>
+                <li>
+                    Playing video games
+                </li>
+                <li>
+                    Studying History
+                </li>
+            </ul>
+        </div>
+        <div class="Main" id="5">
+            Click the icons for my socials<br>
+            <div class="le-conns">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="facebook.png" style="height:15vh;" alt="Facebook"></a>
+                <a href="https://github.com/Pubudu-Anuradha"><img src="github.png" style="height: 15vh;" alt="github"></a>
+                <a href="https://www.youtube.com/watch?v=PayvWj2piKg"><img src="instagram.png" style="height: 15vh;" alt="instagram"></a>
+                <a href="https://www.linkedin.com/in/pubudu-anuradha-5b2876212"><img src="linkedin.png" style="height: 15vh;" alt="linkedin"></a>
+            </div>
+            <div class="le-conns">
+                <br>or you can leave me an email at<br>pubudu.anuradha.satharasinghe@gmail.com
+            </div>
+        </div>
+        <div class="bottom">
+            <button class="piece_b" onclick="opensegment('1',this)" id="def">𓁟Home𓁟</button>
+            <button class="piece_w" onclick="opensegment('2',this)">𓁢Experience𓁢</button>
+            <button class="piece_b" onclick="opensegment('3',this)">𓁣Interests𓁣</button>
+            <button class="piece_w" onclick="opensegment('4',this)">𓁧Hobbies𓁧</button>
+            <button class="piece_b" onclick="opensegment('5',this)">𓁭Contact-me𓁭</button>
+        </div> 
+    </body>
+</html>
