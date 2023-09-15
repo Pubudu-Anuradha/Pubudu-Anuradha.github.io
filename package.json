@@ -8,7 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "eslint --fix-dry-run --ext .js,.astro src"
+    "lint": "eslint --fix-dry-run --ext .js,.astro src",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@astrojs/mdx": "^1.1.0",

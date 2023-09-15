@@ -1,0 +1,33 @@
+---
+import type { MarkdownLayoutProps } from 'astro';
+
+type Props = MarkdownLayoutProps<{
+  title: string;
+  date: string;
+}>;
+
+const { frontmatter } = Astro.props;
+---
+
+<main>
+  <header>
+    <h1>
+      {frontmatter.title}
+    </h1>
+  </header>
+  {frontmatter.date}
+  <div class="blog">
+    <slot />
+  </div>
+</main>
+
+<style>
+  main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .blog {
+    width: 720px;
+  }
+</style>
